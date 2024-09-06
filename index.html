@@ -4,24 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Focus TImer 2.0 - Pomodoro</title>
-    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body>
-    <div class="focus-timer">
-      <div class="timer">25:00</div>
-      <div class="controls">
-        <button class="ph ph-play-circle"></button>
-        <button class="ph ph-pause-circle"></button>
-        <button class="ph ph-plus-circle"></button>
-        <button class="ph ph-minus-circle"></button>
+    <div id="app">
+
+      <div id="left">
+        <section id="timer" class="flex">
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </section>
+
+        <section id="controls" class="flex">
+          <button class="ph ph-play-circle"></button>
+          <button class="ph ph-pause-circle"></button>
+          <button class="ph ph-plus-circle"></button>
+          <button class="ph ph-minus-circle"></button>
+        </section>
       </div>
-      <div class="icons">
-        <button class=""></button>
-        <button class="icon-btn"></button>
-        <button class="icon-btn"></button>
-        <button class="icon-btn"></button>
+
+      <div id="right">
+        <section id="icons" class="flex">
+          <button class="icon-btn">
+            <img src="./assets/tree.svg" alt="" />
+          </button>
+          <button class="icon-btn">
+            <img src="./assets/rain.svg" alt="" />
+          </button>
+          <button class="icon-btn">
+            <img src="./assets/cafeteria.svg" alt="" />
+          </button>
+          <button class="icon-btn">
+            <img src="./assets/fireplace.svg" alt="" />
+          </button>
+        </section>
       </div>
     </div>
   </body>
