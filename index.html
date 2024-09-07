@@ -10,38 +10,41 @@
   </head>
   <body>
     <div id="app">
+      <section id="timer" class="flex">
+        <span id="minutes">25</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </section>
 
-      <div id="pomodoro">
-        <section id="timer" class="flex">
-          <span id="minutes">00</span>
-          <span>:</span>
-          <span id="seconds">00</span>
-        </section>
+      <section id="controls" class="flex">
+        <button class="control-btn">
+          <i class="ph ph-play-circle"></i>
+        </button>
+        <button class="control-btn">
+          <i class="ph ph-stop-circle"></i>
+        </button>
+        <button class="control-btn">
+          <i class="ph ph-plus-circle"></i>
+        </button>
+        <button class="control-btn">
+          <i class="ph ph-minus-circle"></i>
+        </button>
+      </section>
 
-        <section id="controls" class="flex">
-          <button class="ph ph-play-circle"></button>
-          <button class="ph ph-pause-circle"></button>
-          <button class="ph ph-plus-circle"></button>
-          <button class="ph ph-minus-circle"></button>
-        </section>
-      </div>
-
-      <div id="music">
-        <section id="icons" class="flex">
-          <button class="icon-btn">
-            <img src="./assets/tree.svg" alt="" />
-          </button>
-          <button class="icon-btn">
-            <img src="./assets/rain.svg" alt="" />
-          </button>
-          <button class="icon-btn">
-            <img src="./assets/cafeteria.svg" alt="" />
-          </button>
-          <button class="icon-btn">
-            <img src="./assets/fireplace.svg" alt="" />
-          </button>
-        </section>
-      </div>
+      <section id="icons">
+        <button class="icon-btn">
+          <img src="./assets/tree.svg" alt="" />
+        </button>
+        <button class="icon-btn">
+          <img src="./assets/rain.svg" alt="" />
+        </button>
+        <button class="icon-btn">
+          <img src="./assets/cafeteria.svg" alt="" />
+        </button>
+        <button class="icon-btn">
+          <img src="./assets/fireplace.svg" alt="" />
+        </button>
+      </section>
     </div>
   </body>
 </html>
