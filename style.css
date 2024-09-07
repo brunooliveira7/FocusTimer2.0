@@ -44,7 +44,7 @@ body {
     grid-row: 2 / 3; /* Começa na seg. e termina na terceira - abaixo do timer */
     justify-content: center;
     gap: 1rem;
-  }
+  }  
 
   #icons {
     grid-column: 2 / 3; /* Começa na seg. e termina na terc. col - ocupa a seg, coluna */
