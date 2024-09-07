@@ -24,8 +24,7 @@ body {
   display: grid;
   grid-template-columns: 1fr auto; /* 2 colunas, a maior para o timer e controles */
   grid-template-rows: auto auto; /* 2 linhas */
-  gap: 2rem;
-  padding: 2rem;
+  column-gap: 19rem;
 }
 
 .flex {
@@ -33,23 +32,28 @@ body {
 }
 
 #timer {
-  grid-column: 1 / 2; /* Começa na prim. e termina na seg. col - ocupa a prim. coluna */
-  grid-row: 1 / 2; /* Ocupa a prim. linha - superior */
-  font-size: clamp(
-    2rem,
-    5vw,
-    6rem
-  ); /* Resposta do tamanho da fonte com clamp */
+  grid-column: 1 / 2; /* Começa na prim. e termina na seg. col (virtual)- ocupa a prim. coluna */
+  grid-row: 1 / 2; /* Ocupa a prim. linha (virtual)- superior */
+  font-size: 9.6rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   gap: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 #controls {
-  grid-column: 1 / 2; /* Mantém-se na primeira coluna */
-  grid-row: 2 / 3; /* Começa na seg. e termina na terceira - abaixo do timer */
   justify-content: center;
-  gap: 1rem;
+  align-items: baseline;
+  gap: 1.6rem;
+}
+
+.control-btn {
+  font-size: 5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 #icons {
@@ -58,5 +62,12 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Define duas col. dentro da seção de ícones. */
   grid-template-rows: 1fr 1fr; /* Define duas linhas dentro da seção de ícones */
-  gap: 1rem; /* Espaço entre os ícones */
+  gap: 3.2rem; /* Espaço entre os ícones */
+}
+
+.icon-btn {
+  background-color: var(--bg-color);
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
 }
