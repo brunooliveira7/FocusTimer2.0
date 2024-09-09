@@ -7,7 +7,7 @@ export function registerControls() {
       if (action == undefined) {
         return;
       }
-      console.log(action)
+      console.log(action);
     });
   });
 }
