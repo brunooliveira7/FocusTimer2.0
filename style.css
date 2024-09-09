@@ -34,7 +34,7 @@ body {
 #timer {
   grid-column: 1 / 2; /* Começa na prim. e termina na seg. col (virtual)- ocupa a prim. coluna */
   grid-row: 1 / 2; /* Ocupa a prim. linha (virtual)- superior */
-  font-size: 9.6rem;
+  font-size: 10rem;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   justify-content: center;
@@ -44,6 +44,8 @@ body {
 }
 
 #controls {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
   justify-content: center;
   align-items: baseline;
   gap: 1.6rem;
@@ -72,9 +74,9 @@ body {
 }
 
 .icon-btn.active svg path.background {
-  fill: var(--active-color); /* icon color */
+  fill: var(--active-color);
 }
 
 .icon-btn.active svg path.icon {
-  fill: var(--bg-color);; /* icon color */
+  fill: var(--bg-color);
 }
