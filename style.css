@@ -58,6 +58,11 @@ body {
   cursor: pointer;
 }
 
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle {
+  display: none;
+}
+
 #icons {
   grid-column: 2 / 3; /* Começa na seg. e termina na terc. col - ocupa a seg, coluna */
   grid-row: 1 / 3; /* Ocupa as duas linhas: timer e controles */
