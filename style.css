@@ -71,5 +71,10 @@ body {
   cursor: pointer;
 }
 
+.icon-btn.active svg path.background {
+  fill: var(--active-color); /* icon color */
+}
 
-
+.icon-btn.active svg path.icon {
+  fill: var(--bg-color);; /* icon color */
+}
