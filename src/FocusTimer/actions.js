@@ -1,10 +1,16 @@
-//serve para o play e pause
+import state from "./state.js";
+import * as timer from "./timer.js";
+
 export function toggleRunning() {
-  console.log("toggleRunning Function");
+  state.isRunning = document.documentElement.classList.toggle("running");
+
+  timer.countDown();
 }
 
 export function reset() {
-  console.log("reset Function");
+  state.isRunning = false;
+  document.documentElement.classList.remove("running");
+  timer.updateDisplay();
 }
 
 export function increaseMinutes() {
