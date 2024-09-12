@@ -1,7 +1,7 @@
 <h1 align="center"> Focus Timer </h1>
 
 <p align="center">
-O Focus Timer é um aplicativo de produtividade projetado para ajudar usuários a gerenciar melhor o tempo e aumentar a concentração. Baseado na técnica Pomodoro. Site disponível em: https://brunooliveira7.github.io/FocusTimer/
+O Focus Timer é um aplicativo de produtividade projetado para ajudar usuários a gerenciar melhor o tempo e aumentar a concentração. Baseado na técnica Pomodoro. Site disponível em: 
 </p>
 
 <p align="center">
