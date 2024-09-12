@@ -8,7 +8,7 @@
   --bg-color: hsla(0, 0%, 100%, 1);
   --text-color: hsla(240, 6%, 21%, 1);
   --controls-bg-color: hsla(240, 9%, 89%, 1);
-  --active-color: hsla(194, 97%, 31%, 1);
+  --bg-card-selected: hsla(194, 97%, 31%, 1);
   font-size: clamp(40%, 1% + 2vw, 62.5%);
 }
 
@@ -63,7 +63,7 @@ html:not(.running) .ph-pause-circle {
   display: none;
 }
 
-#icons {
+#soundControls {
   grid-column: 2 / 3; /* Começa na seg. e termina na terc. col - ocupa a seg, coluna */
   grid-row: 1 / 3; /* Ocupa as duas linhas: timer e controles */
   display: grid;
@@ -72,16 +72,27 @@ html:not(.running) .ph-pause-circle {
   gap: 3.2rem; /* Espaço entre os ícones */
 }
 
-.icon-btn {
+button {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-.icon-btn.active svg path.background {
+.selected {
+  background-color: var(--bg-card-selected);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.selected img{
+  filter: brightness(10);
+}
+
+/* 
+.icon-btn.active {
   fill: var(--active-color);
 }
 
-.icon-btn.active svg path.icon {
+.icon-btn.active {
   fill: var(--bg-color);
 }
+*/
