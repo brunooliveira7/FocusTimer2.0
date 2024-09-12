@@ -72,6 +72,13 @@ html:not(.running) .ph-pause-circle {
   gap: 3.2rem; /* Espaço entre os ícones */
 }
 
+.card {
+  background-color: var(--controls-bg-color);
+  border-radius: 2.4rem;
+  padding: 1.5rem;
+  transition: all .2s;
+}
+
 button {
   background-color: transparent;
   border: none;
@@ -83,7 +90,7 @@ button {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.selected img{
+.selected img {
   filter: brightness(10);
 }
 
