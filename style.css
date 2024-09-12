@@ -93,13 +93,3 @@ button {
 .selected img {
   filter: brightness(10);
 }
-
-/* 
-.icon-btn.active {
-  fill: var(--active-color);
-}
-
-.icon-btn.active {
-  fill: var(--bg-color);
-}
-*/
