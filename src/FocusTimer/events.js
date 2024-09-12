@@ -16,7 +16,6 @@ export function registerControls() {
 }
 
 export function registerSounds() {
-  // Itera sobre os botões
   el.sounds.forEach((button) => {
     button.addEventListener("click", (event) => {
       const action = event.currentTarget.dataset.sound; // Captura o data-sound ao clicar
@@ -39,6 +38,4 @@ export function registerSounds() {
     });
   });
 }
-
-// Chame a função registerSounds para ativar os eventos
 
