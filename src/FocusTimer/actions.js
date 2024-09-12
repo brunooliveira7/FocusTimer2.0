@@ -13,10 +13,26 @@ export function reset() {
   timer.updateDisplay();
 }
 
-export function increaseMinutes() {
-  console.log("increaseMinutes Function");
+export function timeUp() {
+  console.log("timeUp Function");
 }
 
-export function decreaseMinutes() {
-  console.log("decreaseMinutes Function");
+export function timeDown() {
+  console.log("timeDown Function");
+}
+
+export function forest() {
+  console.log("forest Function");
+}
+
+export function rain() {
+  console.log("rain Function");
+}
+
+export function coffe() {
+  console.log("coffe Function");
+}
+
+export function fireplace() {
+  console.log("fireplace Function");
 }
