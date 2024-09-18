@@ -25,20 +25,20 @@ export function timeDown() {
 
 export function forest() {
   state.soundActive = true;
-  sounds.buttonForest.play(); //pegando do sounds e inserindo no botão
+  sounds.forest.play(); //pegando do sounds e inserindo no botão
 }
 
 export function rain() {
   state.soundActive = true;
-  sounds.buttonRain.play();
+  sounds.rain.play();
 }
 
 export function coffe() {
   state.soundActive = true;
-  sounds.buttonCoffe.play();
+  sounds.coffe.play();
 }
 
 export function fireplace() {
   state.soundActive = true;
-  sounds.buttonFireplace.play();
+  sounds.fireplace.play();
 }
