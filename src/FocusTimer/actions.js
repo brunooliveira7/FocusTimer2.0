@@ -16,11 +16,26 @@ export function reset() {
 }
 
 export function timeUp() {
-  console.log("timeUp Function");
+  if (!state.isRunning) {
+    if (state.minutes > 59) {
+      state.minutes = 60;
+      return;
+    } else {
+      state.minutes += 5;
+      timer.updateDisplay();
+    }
+  }
 }
 
 export function timeDown() {
-  console.log("timeDown Function");
+  if (!state.isRunning) {
+    if (state.minutes === 5) {
+      return;
+    } else {
+      state.minutes -= 5;
+      timer.updateDisplay();
+    }
+  }
 }
 
 export function forest() {
