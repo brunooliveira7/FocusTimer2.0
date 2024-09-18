@@ -1,5 +1,6 @@
 import state from "./state.js";
 import * as timer from "./timer.js";
+import * as sounds from "./sounds.js";
 
 export function toggleRunning() {
   state.isRunning = document.documentElement.classList.toggle("running");
@@ -10,6 +11,7 @@ export function toggleRunning() {
 export function reset() {
   state.isRunning = false;
   document.documentElement.classList.remove("running");
+
   timer.updateDisplay();
 }
 
@@ -22,17 +24,21 @@ export function timeDown() {
 }
 
 export function forest() {
-  console.log("forest Function");
+  state.soundActive = true;
+  sounds.buttonForest.play(); //pegando do sounds e inserindo no botão
 }
 
 export function rain() {
-  console.log("rain Function");
+  state.soundActive = true;
+  sounds.buttonRain.play();
 }
 
 export function coffe() {
-  console.log("coffe Function");
+  state.soundActive = true;
+  sounds.buttonCoffe.play();
 }
 
 export function fireplace() {
-  console.log("fireplace Function");
+  state.soundActive = true;
+  sounds.buttonFireplace.play();
 }
