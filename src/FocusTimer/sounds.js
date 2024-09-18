@@ -1,4 +1,5 @@
-export const forest = new Audio("./assets/Floresta.wav"); //construtor pra criar um player no HTML, puxando o assets
+// a var tem que ser forest porque no HTML o datasound está forest
+export const forest = new Audio("./assets/Floresta.wav"); //New Audio - construtor pra criar um player no HTML, puxando o assets
 
 export const rain = new Audio("./assets/Chuva.wav");
 

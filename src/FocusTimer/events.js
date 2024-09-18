@@ -34,7 +34,7 @@ export function registerSounds() {
       }
       //controle de reprodução de som
       if (state.soundActive) {
-        sounds.forest.pause();
+        sounds.forest.pause(); //no HTML o datasound recebe forest
         sounds.rain.pause();
         sounds.coffe.pause();
         sounds.fireplace.pause();
